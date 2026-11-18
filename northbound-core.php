@@ -119,13 +119,36 @@ function northbound_register_patterns() {
 	register_block_pattern( 'northbound/visit-us', array(
 		'title'      => 'Visit Us',
 		'categories' => array( 'call-to-action' ),
-		'content'    => '<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:heading -->
-<h2 class="wp-block-heading">Visit us today</h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p>Open daily, 7 a.m. to 3 p.m.</p>
-<!-- /wp:paragraph --></div>
-<!-- /wp:group -->',
+		'content' => '
+		<!-- wp:heading {"level":3,"style":{"typography":{"textAlign":"center"}}} -->
+		<h3 class="wp-block-heading has-text-align-center">VISIT NORTHBOUND TODAY</h3>
+		<!-- /wp:heading -->
+
+		<!-- wp:columns -->
+		<div class="wp-block-columns">
+		<!-- wp:column {"width":"66.66%"} -->
+		<div class="wp-block-column" style="flex-basis:66.66%">
+		<!-- wp:paragraph {"style":{"typography":{"textAlign":"center"}}} -->
+		<p class="has-text-align-center">Enjoy our handcrafted drinks and delicious bakery items.</p>
+		<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:column -->
+
+		<!-- wp:column {"width":"33.33%"} -->
+		<div class="wp-block-column" style="flex-basis:33.33%">
+		<!-- wp:buttons -->
+		<div class="wp-block-buttons">
+		<!-- wp:button -->
+		<div class="wp-block-button">
+		<a class="wp-block-button__link wp-element-button" href="/menu/">View Our Menu</a>
+		</div>
+		<!-- /wp:button -->
+		</div>
+		<!-- /wp:buttons -->
+		</div>
+		<!-- /wp:column -->
+		</div>
+		<!-- /wp:columns -->
+		',
 	) );
 }
