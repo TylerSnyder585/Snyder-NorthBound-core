@@ -1,0 +1,22 @@
+.rr-latest {
+    background: var(--wp--preset--color--accent-1);
+    padding: 1rem;
+    border-radius: 10px;
+    list-style: none;
+}
+
+.rr-latest li {
+    margin-bottom: 0.5rem;
+}
+
+.rr-price {
+    font-weight: bold;
+    color: var(--wp--preset--color--accent-2);
+}
+
+.rr-cta {
+    background: var(--wp--preset--color--accent-1);
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
