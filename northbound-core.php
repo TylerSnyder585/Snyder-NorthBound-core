@@ -95,8 +95,8 @@ function northbound_add_cta( $content ) {
 	if ( ! is_singular( 'post' ) || ! is_main_query() ) {
 		return $content; // Leave everything else alone.
 	}
-	$cta = '<div class="rr-cta"><p>Stop by for a fresh cup.</p>'
-		. '<a href="' . esc_url( home_url( '/menu/' ) ) . '">See the menu</a></div>';
+	$cta = '<div class="rr-cta"><p>Explore our latest coffee and bakery offerings.</p>'
+		. '<a href="' . esc_url( home_url( '/menu/' ) ) . '">View Our Menu</a></div>';
 	return $content . $cta;
 }
  
