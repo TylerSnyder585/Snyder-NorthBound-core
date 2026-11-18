@@ -151,4 +151,19 @@ function northbound_register_patterns() {
 		<!-- /wp:columns -->
 		',
 	) );
+
+// Business Hours Shortcode
+add_shortcode( 'business_hours', 'northbound_business_hours' );
+
+function northbound_business_hours() {
+
+    $weekday_hours = 'Monday-Friday: 6 AM - 6 PM';
+    $weekend_hours = 'Saturday-Sunday: 7 AM - 4 PM';
+
+    return '<div class="rr-hours">'
+        . esc_html( $weekday_hours )
+        . '<br>'
+        . esc_html( $weekend_hours )
+        . '</div>';
+}
 }
